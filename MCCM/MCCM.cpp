@@ -8,8 +8,9 @@ int code = 0;
 void input() {
     cout << "Please select the command." << endl;
     cout << "1. /ability 赋予或剥夺玩家的能力。" << endl;
-    cout << "2. /advancement 给予或移除玩家的进度或某一进度的一项准则（Criterion）。（Java）" << endl;
-    cout << "" << endl;
+    //cout << "2. /advancement 给予或移除玩家的进度或某一进度的一项准则（Criterion）。（Java）" << endl;
+    cout << "3.锁定或解锁终为白日。(仅基岩版）" << endl;
+    cout << "4./ban封禁系列(仅java版）" << endl;
     cin >> code;
 }
 
@@ -29,7 +30,18 @@ int main() {
                 // Handle error (if needed)  
             }
         }
+        else if (code == 3) {
+            if (alwaysday_3() != 0) {
+                // Handle error (if needed)  
+            }
+        }
+        else if (code == 4) {
+            if (ban_4() != 0) {
+                // Handle error (if needed)  
+            }
+        }
         // 处理其他 code 的情况...  
     }
+    
     return 0;
 }

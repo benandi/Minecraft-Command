@@ -66,3 +66,50 @@ int advancement_2() {
     // 处理其他 code 的情况...  
     return 0;
 }
+int alwaysday_3()
+{
+    cout << "是否终为白日？（true or false)" << endl;
+    string day;
+    cin >> day;
+    if (day != "true" && day != "false") {
+        cout << "[lock: Boolean]错误,需为 true、false 任何一项！" << endl;
+        return 1;
+    }
+    cout << "Generate as:" << " /daylock " << day <<endl;
+    return 0;
+}
+int ban_4()
+{
+    int x = 1;
+    cout << "1.封禁(UUID)" << endl;
+    cout << "2.封禁(IP)" << endl;
+    cout << "3./banlist封禁名单" << endl;
+    cin >> x;
+    if (x == 1)
+    {
+        string targets;
+        string reason;
+        cout << "玩家名" << endl;
+        cin >> targets;
+        cout << "要展示给被封禁玩家、其他管理员以及服务器日志中的信息" << endl;
+        cin >> reason;
+        cout << "/ban" << targets << " " << reason << endl;
+    }
+    else if (x == 2)
+    {
+        string targets;
+        string reason;
+        cout << "玩家名ip" << endl;
+        cin >> targets;
+        cout << "要展示给被封禁玩家、其他管理员以及服务器日志中的信息" << endl;
+        cin >> reason;
+        cout << "/ban-ip" << targets << " " << reason << endl;
+
+    }
+    else if (x == 3)
+    {
+        cout << "ip列表:" << "/banlist ips" << endl;
+        cout<< "玩家列表:" << "banlist players" << endl;
+    }
+    return 0;
+}
