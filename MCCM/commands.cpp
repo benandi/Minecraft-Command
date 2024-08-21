@@ -62,7 +62,28 @@ int advancement_2() {
         cout << "Generate as:" << "/advancement " << gr << " " << targets << " " << "everything" << endl;
         return 0;
     }
+    else if (code == 2)
+    {
 
-    // 处理其他 code 的情况...  
+    }
+    else if (code == 3)
+    {
+
+    }
+    else if (code == 4)
+    {
+
+    }
+    else if (code == 5)
+    {
+
+    }
+    else
+    {
+
+    }
+
+
+    
     return 0;
 }

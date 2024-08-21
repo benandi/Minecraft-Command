@@ -21,15 +21,15 @@ int main() {
         }
         else if (code == 1) {
             if (ability_1() != 0) {
-                // Handle error (if needed)  
+                  
             }
         }
         else if (code == 2) {
             if (advancement_2() != 0) {
-                // Handle error (if needed)  
+                  
             }
         }
-        // 处理其他 code 的情况...  
+        
     }
     return 0;
 }
